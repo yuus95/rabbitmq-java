@@ -21,7 +21,7 @@ public class MessageController {
      */
     @PostMapping("/send/message")
     public String sendMessage(@RequestBody MessageDto messageDto) {
-        messageService.sendMessage(messageDto);
+        messageService.sendMessage();
         return "send success!";
     }
 }
